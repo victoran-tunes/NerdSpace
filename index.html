@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- ! Baixe a extensão do better comments para visualizar melhor o código-->
+  <!-- *metas-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="projeto final">
+  <meta name="keywords" content="Noticias, jogos, livros, filmes, séries">
+  <meta name="author" content="Marcos Ferreira, Victor Antunes, Thiago Ceolin e William Nicolini">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--*Incorporar a estilização do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!--*Incorporando o JS do Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script src="js/jscript.js"></script>
+  <link rel="shortcut icon" href="img/iconsite.png">
+  <!-- *Puxando o CSS próprio -->
+  <link rel="stylesheet" href="style/css.css">
+  <title>Nerd Space</title>
+</head>
+
+<body id="body">
+  <main class="container-fluid">
+    <!-- todo: inicio do header-->
+    <header class="sticky-top navlogo  " id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 navshadow">
+        <a class="navbar-brand ml-5" href="#"> <img src="img/logosite.png" alt="Logo do nerd space"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="nav-item olho " aria-label="Area de acessibilidade">
+          <img class="olho" onclick="pretoEBranco()" src="img/olho.png" alt="imagem de um olho" title="DALTONISMO"
+            aria-label="deixar a página preto e branco">
+        </section>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a class="nav-link ml-5 border-bottom" href="paginaFilmes.html">Filmes </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-5 border-bottom" href="paginaSeries.html">Séries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-5 border-bottom" href="paginaJogos.html">Jogos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-5 border-bottom" href="paginaLivros.html">Livros</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--! fim do Header-->
+    <!-- todo: primeira seção de notícias -->
+    <div class="row mb-4 ">
+      <section class="col-md-9 col-lg-4 res">
+        <h2 class="sumiu">a</h2> <!-- todo: inicio da seção do filme IM3-->
+        <a href="filmeIM3.html">
+          <figure class="rounded zoom foto">
+            <img src="img/im3.jpg" alt="pôster do Invocação do Mal 3" class="rounded zoom">
+          </figure>
+          <article>
+            <h2 class="text-center">
+              Invocação do Mal 3 - Confira novo Trailer
+            </h2>
+          </article>
+        </a>
+      </section> <!-- !fim da seção do filme IM3-->
+      <section class="col-md-9 col-lg-4 res">
+        <h2 class="sumiu">a</h2>
+        <a href="filmeSJ.html">
+          <figure class="rounded zoom foto">
+            <img src="img/spacejam.jpg" alt="pôster do Space Jam" class="rounded zoom">
+          </figure>
+          <article>
+            <h2 class="text-center">
+              Space Jam - Veja a sinopse do Filme
+            </h2>
+          </article>
+        </a>
+      </section>
+      <section class="col-md-9 col-lg-4 res">
+        <!-- todo: inicio da seção do mortal kombat -->
+        <h2 class="sumiu">a</h2>
+        <a href="filmeES.html">
+          <figure class="rounded zoom foto ">
+            <img src="img/es.jpg" alt="Pôster do Esquadrão Suicida" class="rounded zoom">
+          </figure>
+          <article>
+            <h2 class="text-center">
+              Confira uma sinopse do filme Esquadrão Suicida.
+            </h2>
+          </article>
+        </a>
+      </section> <!-- ! fim da seção do mortal kombat-->
+    </div>
+    <!-- todo: Segundo container de notícias  -->
+    <hr class="bg-light">
+    <div class="row ">
+      <section class="col-md-5 col-xl-3 resol">
+        <h2 class="sumiu">a</h2>
+        <a href="livro5LSK.html">
+          <!-- todo: seção do livro 5LSK-->
+          <figure class="altura rounded zoom ">
+            <img src="img/sking.png" alt="Foto do stephen king" class="rounded  zoom ">
+          </figure>
+          <article>
+            <h2 class="text-center tdois">
+              5 Melhores adaptações de livros do King para o cinema
+            </h2>
+          </article>
+        </a> <!-- !fim do livro 5LSK -->
+      </section>
+      <section class="col-md-5 col-xl-3 resol">
+        <!-- todo: seção do livro decod-->
+        <h2 class="sumiu">a</h2>
+        <a href="livroDecod.html">
+          <figure class="altura rounded zoom">
+            <img src="img/decod.jpg" alt="Foto do livro A Decodificadora" class="rounded zoom ">
+          </figure>
+          <article>
+            <h2 class="text-center tdois">
+              A Decodificadora, novo livro de Walter Isaacson
+            </h2>
+          </article>
+          <!--! fim do article do livro Decod-->
+        </a>
+      </section>
+      <section class="col-md-5 col-xl-3 resol">
+        <!-- todo: seção jogo DMC -->
+        <h2 class="sumiu">a</h2>
+        <a href="jogoDMC.html">
+          <figure class="altura rounded zoom">
+            <img src="img/dmc.jpg" alt="Foto do Jogo Devil May Cry 5" class="rounded zoom ">
+          </figure>
+          <article>
+            <h2 class="text-center tdois">
+              Devil May Cry 5 - Novo Jogo da Capcom
+            </h2>
+          </article>
+          <!--! fim da section de DMC -->
+        </a>
+      </section>
+      <section class="col-md-5 col-xl-3  resol">
+        <!--TODO: seção de livros SEO -->
+        <h2 class="sumiu">a</h2>
+        <a href="livrosSEO.html">
+          <figure class="altura rounded zoom">
+            <img src="img/seo.png" alt="Foto dos livros da saga Sombra E Ossos" class="rounded  zoom">
+          </figure>
+          <article>
+            <h2 class="text-center tdois">
+              Sombra e Ossos - Livro que virará adaptação na Netflix
+            </h2>
+          </article>
+        </a>
+      </section>
+      <!--! fim da section de livros seo-->
+    </div>
+    <!-- Todo: Card com ultimas notícias -->
+    <article class="mt-4 divid">
+      <h2 class="sumiu">a</h2>
+      <p style="float: left; width: 10%" class="text-light">
+        Últimas Notícias
+      </p>
+      <hr style="float: right; width: 90%" class="bg-light">
+      <br>
+    </article>
+    <!--! fechamento do article-->
+    <br><br>
+    <!-- TODO: cards -->
+    <div class="row ">
+      <div class="col-md-6 col-xl-3 ">
+        <div class="card  ">
+          <figure class="zoom">
+            <a href="jogoCP.html">
+              <img src="img/cb.jpg" class="card-img-top " alt="Pôster do Cyber Punk 2077">
+            </a>
+          </figure>
+          <div class=" card-body">
+            <a href="jogoCP.html">
+              <h5 class="card-title text-center titulocard tdois ">Cyber Punk 2077</h5>
+            </a>
+            <hr>
+            <p class="card-text">Confira uma sinopse do tão aguardado jogo da Ubsoft.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6  col-xl-3">
+        <div class="card  ">
+          <figure class="zoom">
+            <a href="jogoTLOU.html">
+              <img src="img/tlou2.jpg" class="card-img-top" alt="Foto do jogo The Last Of Us 2">
+            </a>
+          </figure>
+          <div class="card-body">
+            <a href="jogoTLOU.html">
+              <h5 class="card-title text-center titulocard tdois">The Last of Us Part II</h5>
+            </a>
+            <hr>
+            <p class="card-text">Novo jogo que continua as aventuras de Ellie em um mundo devastado por zumbis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3 ">
+        <div class="card  ">
+          <figure class="zoom">
+            <a href="serieLDJ.html">
+              <img src="img/ldj.jpg" class="card-img-top" alt="Foto da série O legado de júpiter">
+            </a>
+          </figure>
+          <div class="card-body">
+            <a href="serieLDJ.html">
+              <h5 class="card-title text-center titulocard tdois">O Legado de Júpiter</h5>
+            </a>
+            <hr>
+            <p class="card-text">Nova série da Netflix explorará um universo onde os heróis são reais. Será o The Boys
+              da Netflix?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3 ">
+        <div class="card">
+          <figure class="zoom">
+            <a href="serieOIDBS.html">
+              <img src="img/oidbs.jpg" class="card-img-top" alt="Foto da série Os Irregulares de Baker Street">
+            </a>
+          </figure>
+          <div class="card-body">
+            <a href="serieOIDBS.html">
+              <h5 class="card-title text-center titulocard tdois">Os Irregulares de Baker Street</h5>
+            </a>
+            <hr>
+            <p class="card-text">Estria a serie que se passa no universo de Sherlock Holmes mas com um quê de
+              sobrenatual .</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- !fechamento da primeira linha dos cards -->
+    <div class="row mt-4 ">
+      <!-- TODO cards 2  -->
+      <div class="col-md-6 col-xl-3 ">
+        <div class="card ">
+          <figure class=" zoom">
+            <a href="filmeVEF9.html">
+              <img src="img/vef.jpg" class="card-img-top" alt="Foto do pôster do filme dos Velozes e Furiosos 9">
+            </a>
+          </figure>
+          <div class=" card-body">
+            <a href="filmeVEF9.html">
+              <h5 class="card-title text-center titulocard tdois">Velozes e Furiosos 9</h5>
+            </a>
+            <hr>
+            <p class="card-text">Sinopse do nono filme da saga Velozes e Furiosos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3 ">
+        <div class="card">
+          <figure class=" zoom">
+            <a href="jogoAnt.html">
+              <img src="img/anthem.jpg" class="card-img-top" alt="Foto do jogo Anthem">
+            </a>
+          </figure>
+          <div class="card-body">
+            <a href="jogoAnt.html">
+              <h5 class="card-title text-center titulocard tdois">Anthem</h5>
+            </a>
+            <hr>
+            <p class="card-text">Anthem é um jogo de mundo aberto compartilhado com até outros 3 jogadores, no qual
+              assumem papel de mercenários.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3  ">
+        <div class="card">
+          <figure class="zoom">
+            <a href="serieFESV.html">
+              <img src="img/fesi.jpg" class="card-img-top" alt="Foto da série Falcão e o Soldado Invernal">
+            </a>
+          </figure>
+          <div class="card-body">
+            <a href="serieFESV.html">
+              <h5 class="card-title text-center titulocard tdois">Falcão e o Soldado Invernal</h5>
+            </a>
+            <hr>
+            <p class="card-text">Leia uma pequena sinopse sobre o que se fala a tão esperada série da Marvel .</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3  ">
+        <div class="card  ">
+          <figure class=" zoom">
+            <a href="seriePB.html">
+              <img src="img/pb.jpg" class="card-img-top" alt="Foto da Série Peaky Blinders">
+            </a>
+          </figure>
+          <div class="card-body">
+            <a href="seriePB.html">
+              <h5 class="card-title text-center titulocard tdois">Peaky Blinders</h5>
+            </a>
+            <hr>
+            <p class="card-text">Fique por dentro da história da série que conta a vida da criminosa família Shelby.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fechamento da segunda linha dos cards -->
+    <br>
+    <hr class="bg-light">
+    <h2 class="text-center">Contato</h2>
+    <form action="index.html" method="post" id="form" class="backform" name="formnome">
+      <div class="row">
+        <div class="form-group col-md-6 col-sm-12 col-lg-4 nomemail">
+          <div class="inputbox">
+            <label>Nome:</label>
+            <input type="text" name="txtnome" id="nome" class="mt-3" size="20" required placeholder="Digite Seu Nome..."><br>
+            <div id="erro" style="color:red"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4 col-sm-12 col-lg-4 formulario ">
+          <label>Sobre o qual assunto você acha que devemos melhorar?</label>
+          <br>
+          <input type="checkbox" name="cxbinteresse" value="livros"><span class="ml-2">Livros</span> <br>
+          <input type="checkbox" name="cxbinteresse" value="jogos"><span class="ml-2">Jogos </span><br>
+          <input type="checkbox" name="cxbinteresse" value="filmes"><span class="ml-2">Filmes </span><br>
+          <input type="checkbox" name="cxbinteresse" value="series"><span class="ml-2">Séries</span><br>
+        </div>
+        <div class="form-group col-md-6 col-sm-12 col-lg-4 text-center ">
+          <label>Dê uma dica do que podemos melhorar:</label><br>
+          <textarea class="caixamensagem" id="msg" name="txtcursos" rows="5" cols="30" placeholder="Digite Aqui..."></textarea>
+          <div id="erro2" style="color:red"></div>
+          <br>
+          <input type="reset" name="limpar" value="Limpar">
+          &nbsp;
+          <input type="button" id="envia" name="botao" value="Enviar" onclick="validar()">
+        </div>
+      </div>
+    </form>
+    <footer>
+      <p class="text-center">
+        Copyright &copy; 2021 - Direitos reservados aos Guri
+      </p>
+      <p class="text-center">Todas as imagens das notícias são marcas registradas dos seus respectivos proprietários.
+      </p>
+    </footer>
+  </main>
+</body>
+
+</html>

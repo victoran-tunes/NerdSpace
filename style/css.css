@@ -1,0 +1,619 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #282830;
+
+}
+
+.none {
+    display: none;
+}
+
+.navbar {
+    background-image: url("../img/galaxia.jpg");
+    background-size: 100%;
+    font-size: 25px;
+    box-shadow: 0px 10px 20px black !important;
+}
+
+#navbar {
+    transition: top 0.3s;
+}
+
+/* Define uma larura fixa para o logo */
+.navbar-brand {
+    width: 75px !important;
+}
+
+/* define que o logo ocupará 100% da largura */
+.navbar img {
+    width: 100%;
+
+}
+
+
+/* centralizar os ítens da navbar */
+ul {
+    margin: 0 auto;
+}
+
+.navbar-toggler {
+    background-color: #7797dc !important;
+}
+
+.navbar a {
+    margin-left: 20px;
+    color: white !important;
+}
+
+.navshadow {
+    box-shadow: 0px 10px 10px;
+}
+
+.logo {
+    width: 30%;
+    height: 30%;
+}
+
+.olho {
+    width: 30px;
+    height: 30px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* notícias */
+a:hover {
+    text-decoration: none;
+}
+
+a h2:before {
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #7797dc;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a h2:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(.8);
+    transform: scaleX(.8);
+}
+
+.res {
+    margin-bottom: 20px;
+}
+
+.resol {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.zoom {
+    overflow: hidden;
+    height: 240px;
+    width: 100%;
+
+}
+
+.zoom img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s all ease-in-out
+}
+
+.altura {
+    height: 200px;
+}
+
+.zoom img:hover {
+    transform: scale(1.2);
+
+}
+
+
+article h2 {
+    color: #7797dc;
+}
+
+h2 {
+    color: #baafd0;
+}
+
+.borda {
+    border-radius: 20px;
+}
+
+.tdois {
+    font-size: 1.5rem !important;
+
+}
+
+/* formatação dos Cards */
+.cards {
+    background-color: white;
+}
+
+.tamanhofonte {
+    font-size: 20px;
+}
+
+.card {
+    box-shadow: 0px 0px 10px black;
+    margin-top: 10px;
+}
+
+.card-body,
+.card,
+.card-title {
+    background-color: #282830;
+    color: #baafd0;
+}
+
+.card figure {
+    overflow: hidden;
+    height: 190px;
+    width: 100%;
+}
+
+.card img {
+    height: 190px;
+}
+
+.card-body {
+    height: 199px;
+}
+
+.titulocard {
+    font-size: 30px;
+    font-weight: bold;
+    height: 50px;
+    color: #7797dc;
+}
+
+label {
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+}
+
+.button {
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 10px;
+    background-color: white;
+}
+
+.sumiu {
+    display: none;
+}
+
+.backform {
+    background-color: #1b1b1f;
+    padding: 20px;
+    color: white;
+}
+
+/* Página dos artigos */
+.txtarticle {
+
+    text-align: justify;
+
+}
+
+
+.txtpg2 h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3em;
+    font-weight: bolder;
+    color: #7797dc;
+    text-indent: 0;
+}
+
+.txtpg2 p {
+    font-size: 1.5rem;
+
+}
+
+.txtpg2 hr {
+    background-color: white;
+}
+
+.txtpg2 p,
+h1 {
+    color: white;
+    text-indent: 50px;
+
+}
+
+.fotogrande {
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px black;
+
+}
+
+.trailer {
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    height: auto;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Página de notícias filtradas */
+.corh1 {
+    color: #7797dc !important;
+    font-size: 5rem;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:576px) {
+
+    .row {
+        margin: 0 auto;
+        width: 100% !important;
+    }
+
+
+    .navbar {
+        background-image: url("../img/galaxia.jpg");
+        background-size: 100% !important;
+        margin: auto;
+        font-size: 15px !important;
+        width: auto;
+    }
+
+
+
+    .navbar li {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .olho {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1.5rem;
+    }
+
+    .divid p {
+        float: left;
+        width: 90% !important;
+    }
+
+    /* hr divisória */
+    .divid hr {
+        float: right;
+        width: 30% !important;
+    }
+
+    .res {
+        margin-bottom: 30px;
+    }
+
+    .resol {
+        width: 25rem;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        margin-top: 0px;
+        height: 450px !important;
+        width: 21rem;
+    }
+
+    .card-body {
+        height: 5px !important;
+    }
+
+    .cardmt {
+        margin-bottom: 3rem !important;
+        margin-top: 0px !important;
+    }
+
+    /* foto página notícias */
+    .fotogrande {
+
+        width: 100%;
+
+    }
+
+    .txtpg2 p {
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nomemail {
+        text-align: center;
+    }
+
+    .caixamensagem {
+        width: 100%;
+    }
+
+    /* página dos artigos com trailers */
+    .trailer {
+        width: 100% !important;
+        height: 270px !important;
+    }
+
+    .art576 h1 {
+        font-size: 2rem;
+    }
+
+    .art576 p {
+        font-size: 1rem;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 90px;
+    }
+
+    footer p {
+        font-size: .7rem !important;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .row {
+        width: auto;
+    }
+
+    .navbar {
+        background-image: url("../img/galaxia.jpg");
+        background-size: 100% !important;
+        margin: auto;
+        font-size: 15px !important;
+        width: auto;
+    }
+
+    .navbar li {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .olho {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1.5rem;
+    }
+
+    .divid p {
+        float: left;
+        width: 17% !important;
+    }
+
+    /* hr divisória */
+    .divid hr {
+        float: right;
+        width: 83% !important;
+    }
+
+    .card {
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        margin-top: 0px;
+        height: 500px;
+
+    }
+
+
+    /* foto página notícias */
+    .fotogrande {
+        height: 350px !important;
+    }
+
+    .res {
+        margin-bottom: 30px;
+        margin: 0 auto;
+
+    }
+
+    .resol {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .formulario {
+        margin-left: 55px;
+
+    }
+
+    .caixamensagem {
+        width: 500px !important;
+    }
+
+    /* página dos artigos */
+    .trailer {
+        width: 100%;
+        height: 400px;
+    }
+
+    /* rodapé */
+    footer {
+        margin-top: 90px;
+    }
+
+    footer p {
+        font-size: .9rem;
+        margin-bottom: 0;
+    }
+
+
+}
+
+@media screen and (max-width:992px) {
+
+    .row {
+        width: auto;
+    }
+
+    .navbar {
+        background-image: url("../img/galaxia.jpg");
+        background-size: 100% !important;
+        margin: auto;
+        font-size: 15px !important;
+        width: auto;
+    }
+
+    .navbar li {
+        font-size: 25px;
+    }
+
+    .olho {
+        margin-left: 25px;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .res {
+        margin-bottom: 30px;
+    }
+
+    /* foto(banner) das páginas das notícias */
+
+    .foto {
+        height: 60%;
+    }
+
+    /* para os trailers nas notícias */
+    iframe {
+        height: 90%;
+    }
+
+    h1 {
+        text-align: center;
+        text-indent: 0;
+
+        margin-bottom: 50px;
+    }
+
+    .resol {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .resol img {
+        width: 100%;
+    }
+
+
+    .card {
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        margin-top: 0px;
+        height: 500px;
+        width: 350px;
+    }
+
+    .card-body p {
+        font-size: 20px;
+    }
+
+    .caixamensagem {
+        width: 100% !important;
+    }
+
+    /* páginas de artigos */
+    .trailer {
+        width: 100%;
+        height: 400px;
+    }
+
+    footer {
+        margin-top: 90px;
+    }
+
+    footer p {
+        font-size: .9rem;
+        margin-bottom: 0;
+    }
+}
+
+iframe {
+    margin: 0 auto;
+}
+
+
+.preto-branco {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+.acessibilidade {
+    height: 32px;
+    text-align: right;
+    background-color: white;
+}
+
+.acessibilidade button {
+    margin: 4px 5px;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(82, 82, 82);
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.acessibilidade button:hover {
+    background-color: #ff7777;
+}
+
+.olho {
+    filter: saturate(250%);
+}
+
+.center-text{
+    text-align: center;
+    font-size: 50px;
+}
